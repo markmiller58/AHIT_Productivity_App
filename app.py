@@ -70,7 +70,7 @@ new_text = st.text_input("Enter text:")
 if st.button("Add Text"):
     text_list.append(new_text)
     st.session_state["text_entries"] = text_list
-    st.experimental_rerun()  # Refresh to update UI
+    st.rerun()  # Updated function for refreshing UI
 
 # Display Added Texts
 for text in text_list:
